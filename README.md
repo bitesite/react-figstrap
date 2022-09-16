@@ -35,7 +35,7 @@ The main component of Figstrap is an Auto-layout Frame. When a designer uses a F
 e.g.
 
 ```
-import { Frame } from 'react-figstrap';
+import { Frame } from '@bitesite/react-figstrap';
 
 const MyComponent = () => {
 
