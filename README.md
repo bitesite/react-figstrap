@@ -109,5 +109,9 @@ export default MyFancyFrame;
 
 ## Building
 
-1. `npx webpack`
-2. `npm pack`
+If you're a developer on this project and you want to create a new build and publish it:
+
+1. Update the version number.
+1. Build the output by running `npx webpack`
+1. Package the output by running `npm pack`
+1. Publish the package by running `npm publish --access public`
