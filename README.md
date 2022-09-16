@@ -61,6 +61,22 @@ const MyComponent = () => {
 
 The `Frame` component is implemented using a `div` and [styled components](https://styled-components.com/). As such, you can pass any valid HTML attribute to the `Frame` and it will just apply it to the `div`.
 
+#### Want a different element than a `div`?
+
+The `Frame` component is implemented using a `div` and [styled components](https://styled-components.com/) so you're always going to get a `div` if you use the `Frame`. However, because it's built using styled components, you can decide to render other HTML elements instead using the `as` functionality of styled components.
+
+e.g.
+
+```
+return (
+  <Frame vertical padding={20} as='form'>
+    ...
+  </Frame>
+);
+```
+
+The above will render a `form` rather than a `div`.
+
 #### Extending the Frame
 
 The `Frame` component is implemented using [styled components](https://styled-components.com/), so if you need to apply additional CSS or what to create another component based on a Frame, you can.
