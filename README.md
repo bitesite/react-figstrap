@@ -9,13 +9,13 @@ React components for [FigStrap](https://github.com/bitesite/figstrap).
 Using yarn?
 
 ```
-yarn add react-figstrap
+yarn add @bitesite/react-figstrap
 ```
 
 Or NPM?
 
 ```
-npm install react-figstrap
+npm install @bitesite/react-figstrap
 ```
 
 ### Install Peer Dependencies
