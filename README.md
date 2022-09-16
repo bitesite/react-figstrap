@@ -40,7 +40,7 @@ import { Frame } from '@bitesite/react-figstrap';
 const MyComponent = () => {
 
   return (
-    <Frame vertical gap={20} padding={10}>
+    <Frame vertical gap={20} padding={10} alignItems="center" justifyContent="flex-end">
       ...
     </Frame>
   );
@@ -51,13 +51,19 @@ const MyComponent = () => {
 
 | prop | Description |
 | --- | ----------- |
-| `vertical` | When set to `true`, children are laid out vertically. If this is not specified, the default Frame will lay out children horizontally |
-| `padding` | The amount of padding in pixels as an number. Unlike the plain old CSS version of FigStrap, the React version is not limited to certain padding sizes. So you can put whatever number you want here. |
-| `gap` | The size of the gap between children in pixels as an number. Unlike the plain old CSS version of FigStrap, the React version is not limited to certain gap sizes. So you can put whatever number you want here.|
+| `vertical` | *Optional* - When set to `true`, children are laid out vertically. If this is not specified, the default Frame will lay out children horizontally |
+| `padding` | *Optional* - The amount of padding in pixels as an number. Unlike the plain old CSS version of FigStrap, the React version is not limited to certain padding sizes. So you can put whatever number you want here. |
+| `gap` | *Optional* - The size of the gap between children in pixels as an number. Unlike the plain old CSS version of FigStrap, the React version is not limited to certain gap sizes. So you can put whatever number you want here.|
+| `alignItems` | *Optional* - This directly translates to Flexbox `align-items`. Use any flexbox valid value like `center` or `flex-start`. The default value for this is `stretch`.|
+| `justifyContent` | *Optional* - This directly translates to Flexbox `justify-content`. Use any flexbox valid value like `center` or `flex-start`. The default value for this is `flex-start`. |
+
+#### Additional props
+
+The `Frame` component is implemented using a `div` and [styled components](https://styled-components.com/). As such, you can pass any valid HTML attribute to the `Frame` and it will just apply it to the `div`.
 
 #### Extending the Frame
 
-The Frame is implemented using [styled components](https://styled-components.com/), so if you need to apply additional CSS or what to create another component based on a Frame, you can.
+The `Frame` component is implemented using [styled components](https://styled-components.com/), so if you need to apply additional CSS or what to create another component based on a Frame, you can.
 
 ##### Adding additional CSS
 
